@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mandarin Bakery | Freshly Baked Bread Daily</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        :root {
+            --primary: #d97706;
+            --primary-dark: #b45309;
+            --dark: #292524;
+            --light: #fffbeb;
+            --card-bg: #ffffff;
+        }
+
+        body {
+            background-color: var(--light);
+            color: var(--dark);
+            line-height: 1.6;
+        }
+
+        nav {
+            background: #ffffff;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .logo {
+            font-size: 1.3rem;
+            font-weight: 800;
+            color: var(--primary-dark);
+            letter-spacing: -0.5px;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #b45309, #d97706);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .fresh-badge {
+            display: inline-block;
+            background: #fef3c7;
+            color: #92400e;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 700;
+            margin-bottom: 12px;
+        }
+
+        .hero h1 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+            line-height: 1.2;
+        }
+
+        .hero p {
+            font-size: 0.95rem;
+            opacity: 0.95;
+            margin-bottom: 20px;
+        }
+
+        .info-bar {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            padding: 15px 20px;
+            background: #ffffff;
+        }
+
+        .info-card {
+            text-align: center;
+            padding: 10px;
+            border: 1px solid #fef3c7;
+            background: #fffdf5;
+            border-radius: 8px;
+        }
+
+        .info-card h4 {
+            font-size: 0.75rem;
+            color: #78350f;
+            text-transform: uppercase;
+        }
+
+        .info-card p {
+            font-weight: 700;
+            font-size: 0.9rem;
+        }
+
+        .section {
+            padding: 25px 20px;
+        }
+
+        .section-title {
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+            color: var(--dark);
+        }
+
+        .bread-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .bread-card {
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 16px;
+            border: 1px solid #fde68a;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.03);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .bread-info h3 {
+            font-size: 1.05rem;
+            color: var(--dark);
+        }
+
+        .bread-desc {
+            font-size: 0.8rem;
+            color: #78716c;
+            margin: 2px 0 8px 0;
+        }
+
+        .bread-price {
+            font-size: 1.1rem;
+            font-weight: 800;
+            color: var(--primary-dark);
+        }
+
+        .order-btn {
+            background: #25d366;
+            color: white;
+            text-decoration: none;
+            padding: 10px 14px;
+            border-radius: 8px;
+            font-weight: 700;
+            font-size: 0.85rem;
+            white-space: nowrap;
+        }
+
+        .wholesale-box {
+            background: #fff7ed;
+            border: 2px dashed #f97316;
+            border-radius: 12px;
+            padding: 20px;
+            text-align: center;
+            margin: 0 20px 25px 20px;
+        }
+
+        .wholesale-box h3 {
+            color: #c2410c;
+            margin-bottom: 5px;
+        }
+
+        .wholesale-box p {
+            font-size: 0.85rem;
+            color: #7c2d12;
+            margin-bottom: 12px;
+        }
+
+        footer {
+            background: var(--dark);
+            color: white;
+            padding: 25px 20px;
+            text-align: center;
+            font-size: 0.85rem;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">🍞 MANDARIN BAKERY</div>
+        <a href="https://wa.me/2349066629095?text=Hello%20Mandarin%20Bakery,%20I%20want%20to%20inquire%20about%20bread%20availability." style="color: var(--primary-dark); font-weight:700; text-decoration:none; font-size:0.9rem;">Contact Us</a>
+    </nav>
+
+    <section class="hero">
+        <div class="fresh-badge">🔥 BATCH BAKED FRESH DAILY</div>
+        <h1>Fresh, Warm Loaves Delivered Fast</h1>
+        <p>Order individual loaves or bulk quantities straight to your home or store.</p>
+    </section>
+
+    <div class="info-bar">
+        <div class="info-card">
+            <h4>Fresh Batch</h4>
+            <p>Ready @ 6:00 AM</p>
+        </div>
+        <div class="info-card">
+            <h4>Location</h4>
+            <p>Port Harcourt</p>
+        </div>
+    </div>
+
+    <section class="section">
+        <h2 class="section-title">Our Daily Bread Menu</h2>
+        <div class="bread-grid">
+            
+            <div class="bread-card">
+                <div class="bread-info">
+                    <h3>Special Butter Loaf</h3>
+                    <p class="bread-desc">Rich, soft & delicious family loaf</p>
+                    <div class="bread-price">₦1,500</div>
+                </div>
+                <a href="https://wa.me/2349066629095?text=Hello,%20I%20want%20to%20order%20the%20Special%20Butter%20Loaf" class="order-btn">Order Loaf</a>
+            </div>
+
+            <div class="bread-card">
+                <div class="bread-info">
+                    <h3>Jumbo Family Loaf</h3>
+                    <p class="bread-desc">Extra large size for big households</p>
+                    <div class="bread-price">₦2,200</div>
+                </div>
+                <a href="https://wa.me/2349066629095?text=Hello,%20I%20want%20to%20order%20the%20Jumbo%20Family%20Loaf" class="order-btn">Order Loaf</a>
+            </div>
+
+            <div class="bread-card">
+                <div class="bread-info">
+                    <h3>Gourmet Sardine Bread</h3>
+                    <p class="bread-desc">Stuffed with fresh savory filling</p>
+                    <div class="bread-price">₦2,500</div>
+                </div>
+                <a href="https://wa.me/2349066629095?text=Hello,%20I%20want%20to%20order%20the%20Gourmet%20Sardine%20Bread" class="order-btn">Order Loaf</a>
+            </div>
+
+        </div>
+    </section>
+
+    <div class="wholesale-box">
+        <h3>Buying for Retail / Bulk?</h3>
+        <p>Get special discounted pricing for supply orders of 10+ cartons.</p>
+        <a href="https://wa.me/2349066629095?text=Hello,%20I%20want%20to%20inquire%20about%20Wholesale/Bulk%20Bread%20Orders" class="order-btn" style="background:#ea580c;">Inquire Wholesale</a>
+    </div>
+
+    <footer>
+        <p>© Mandarin Bakery — Quality Baked Goods in Port Harcourt</p>
+    </footer>
+
+</body>
+</html>
